@@ -1,144 +1,145 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Register</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #74ebd5, #ACB6E5);
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #333;
-    }
+    <head>
+        <style>
+            body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-image: url('https://staticg.sportskeeda.com/editor/2025/01/3a37a-17376978463277-1920.jpg;');
+            }
+            .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            }
 
-    h1 {
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
+            .left, .right {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            width: 200%;
+            z-index: 0;
+            }
 
-    form {
-      background-color: #ffffff;
-      padding: 25px 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 400px;
-    }
+            .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="number"],
-    input[type="date"] {
-      width: 100%;
-      padding: 12px 15px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-sizing: border-box;
-      transition: 0.3s;
-    }
+            .left {
+            flex: 1;
+            background-image: url('https://staticg.sportskeeda.com/editor/2025/01/3a37a-17376978463277-1920.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            }
 
-    input:focus {
-      border-color: #26cd3f;
-      outline: none;
-      box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
-    }
+            .right {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 450px;
+            height: 100vh;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
 
-    button[type="submit"] {
-      width: 100%;
-      padding: 12px;
-      background-color: #26cd3f;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+            .right h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            }
 
-    button[type="submit"]:hover {
-      background-color: #2980b9;
-    }
+            form input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: 0.3s;
+            }
 
-    table {
-      margin-top: 30px;
-      border-collapse: collapse;
-      width: 90%;
-      max-width: 800px;
-      background-color: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
+            form input:focus {
+            border-color: #26cd3f;
+            outline: none;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+            }
 
-    th, td {
-      padding: 14px 18px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
+            form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #26cd3f;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            }
 
-    th {
-      background-color: #26cd3f;
-      color: white;
-      text-transform: capitalize;
-    }
+            form button:hover {
+            background-color: #2980b9;
+            }
 
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
+            table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
 
-    tr:hover {
-      background-color: #eef6ff;
-    }
-  </style>
-</head>
-<body>
-  <h1>Register (2)</h1>
+            th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            }
 
-  <form id="registerForm">
-    <input type="text" id="name" placeholder="Nama Lengkap" required>
-    <input type="email" id="email" placeholder="Email Aktif" required>
-    <input type="password" id="password" placeholder="Kata Sandi" required>
-    <input type="number" id="nomor hp" placeholder="Nomor HP" required>
-    <input type="date" id="tanggal" placeholder="Tanggal Lahir" required>
-    <button type="submit">Kirim Data</button>
-  </form>
+            th {
+            background-color: #26cd3f;
+            color: white;
+            text-transform: capitalize;
+            }
 
-  <table id="dataTable">
-    <tbody>
-      <tr>
-        <th>Nama</th>
-        <th>Email</th>
-        <th>Nomor HP</th>
-        <th>Tanggal Lahir</th>
-      </tr>
-    </tbody>
-  </table>
+            tr:nth-child(even) {
+            background-color: #f9f9f9;
+            }
 
-  <script>
-    document.getElementById("registerForm").addEventListener("submit", function (e) {
-      e.preventDefault();
+            tr:hover {
+            background-color: #eef6ff;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Nama Lengkap" required>
+            <input type="email" id="email" placeholder="Email Aktif" required>
+            <input type="password" id="password" placeholder="Kata Sandi" required>
+            <input type="number" id="nomor hp" placeholder="Nomor HP" required>
+            <input type="date" id="tanggal" placeholder="Tanggal Lahir" required>
+            <button type="submit">Kirim Data</button>
+        </form>
+        </div>
+    </div>
 
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const nomor = document.getElementById("nomor hp").value;
-      const tanggal = document.getElementById("tanggal").value;
-
-      const table = document.getElementById("dataTable").getElementsByTagName("tbody")[0];
-      const newRow = table.insertRow();
-
-      newRow.insertCell(0).textContent = name;
-      newRow.insertCell(1).textContent = email;
-      newRow.insertCell(2).textContent = nomor;
-      newRow.insertCell(3).textContent = tanggal;
-
-      document.getElementById("registerForm").reset();
-    });
-  </script>
+    <table id="dataTable">
+        <tbody>
+        <tr>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Nomor HP</th>
+            <th>Tanggal Lahir</th>
+        </tr>
+        </tbody>
+    </table>
 </body>
-</html>
+    </html>
