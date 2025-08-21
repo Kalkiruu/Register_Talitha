@@ -1,0 +1,110 @@
+body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-image: url('https://staticg.sportskeeda.com/editor/2025/01/3a37a-17376978463277-1920.jpg;');
+            }
+            .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            }
+
+            .left, .right {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            width: 200%;
+            z-index: 0;
+            }
+
+            .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            }
+
+            .left {
+            flex: 1;
+            background-image: url('https://staticg.sportskeeda.com/editor/2025/01/3a37a-17376978463277-1920.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            }
+
+            .right {
+            background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f2/Dirt_background_BE1.png);
+            padding: 40px;
+            max-width: 450px;
+            height: 100vh;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+
+            .right h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            }
+
+            form input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: 0.3s;
+            }
+
+            form input:focus {
+            border-color: #26cd3f;
+            outline: none;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+            }
+
+            form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #26cd3f;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            }
+
+            form button:hover {
+            background-color: #2980b9;
+            }
+
+            table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+
+            th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            }
+
+            th {
+            background-color: #26cd3f;
+            color: white;
+            text-transform: capitalize;
+            }
+
+            tr:nth-child(even) {
+            background-color: #f9f9f9;
+            }
+
+            tr:hover {
+            background-color: #eef6ff;
+            }
