@@ -126,7 +126,7 @@
             }
             .dropdown-menu {
             position: absolute;
-            top: 150%;
+            top: 135%;
             left: 0;
             background: #333;
             list-style: none;
@@ -945,4 +945,5 @@
             }
             #save:hover, #save2:hover{
                 cursor: pointer;
+
             }
