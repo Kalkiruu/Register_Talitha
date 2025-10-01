@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <title>StayBlog Login Page</title>
+    </head>
+    <body style="overflow: hidden;">
+    <nav class="navbar">
+        <div class="leftside">
+            <div class="logo"><a href="XI.G/Projek pribadi/index.html" style="margin-left: 1.7vw;"><img src="image/stayblogicon.png"></a></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Login</a></li>
+            <li class="dropdown">
+        </ul>
+    </nav>
+
+    <div class="bodycontainer">
+        <div class="left">
+            <h1>Express. Connect.<br>Inspire.</h1>
+        </div>
+        <div class="right"> <!--===============================================================REGISTER FORM windah tol cipularang -->
+            <form id="registerForm">
+                <h1 class="reglogtext">Create an account</h1>
+                <p  class="reglogtextp" style="margin-bottom: 8%;">Already have an account? <span id="toLogin" style="color: rgb(242, 174, 15); text-decoration: none;">Sign in</span></p>
+                <h4>Username</h4>
+                <input type="text" id="nama" placeholder=" " required>
+                <h4>Email</h4>
+                <input type="email" id="email" placeholder=" " required>
+                <h4>Password</h4>
+                <input type="password" id="password" placeholder=" " required>
+                <h4>Date of Birth</h4>
+                <input type="date" id="tanggal" placeholder=" " required>
+                <h4 id="regMessage"></h4><button type="submit">Create Account</button>
+            </form>
+        </div>
+        <div class="right2 active"> <!--====================================================================LOGIN FORM lumpur lapindo blukutuk -->
+            <form id= "loginForm">
+                <h2 style="margin: 0;">Sign in</h2>
+                <p class="reglogtextp" style="margin-bottom: 4%;">Don't have an account? <span id="toRegister" style="color:rgb(242, 174, 15);">Register</span></p>
+                <h4>Email</h4>
+                <input type="email" id="loginEmail" placeholder=" ">
+                <h4>Password</h4>
+                <input type="password" id="loginPassword" placeholder=" ">
+                <h4 id="logMessage"></h4><button type="submit">Login</button>
+            </form>
+        </div>
+        <script src="js/logreg.js"></script>
+    </div>
+    <script src="js/switch.js"></script>
+</body>
+</html>

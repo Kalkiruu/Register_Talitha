@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>StayBlog - User</title>
+    </head>
+    <body class="bg">
+    <nav class="navbar">
+        <div class="leftside">
+            <div class="logo"><a href="XI.G/Projek pribadi/index.html" style="margin-left: 1.7vw"><img src="image/stayblogicon.png"></a></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Account ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="register.html">Log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="changeuser">
+        <div id="cuinterface">
+            <div class="popupcontainer">
+                <div class="above">
+                    <h2 class="changeusertext">Change username</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" id="close">
+                </div>
+                <hr>
+                <form id="changename">
+                    <h3 class="cutext">New Username</h3>
+                    <input class="cuform" required id="grabNewName"></input>
+                    <h3 class="cutext">Confirm Password</h3>
+                    <input type="password" class="cuform" id="grabPassword"></input>
+                    <h4 id="notifMessage"></h4><button id="save" type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="changepass">
+        <div id="cuinterface">
+            <div class="popupcontainer">
+                <div class="above">
+                    <h2 class="changeusertext">Change password</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" id="close2">
+                </div>
+                <hr>
+                <form id="changepassword">
+                    <h3 class="cutext">Old Password</h3>
+                    <input class="cuform" required id="grabPassword2"></input>
+                    <h3 class="cutext">New Password</h3>
+                    <input type="password" class="cuform" id="grabNewPassword"></input>
+                    <h4 id="notifMessage2"></h4><button id="save2" type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="settingsbg">
+        <h1 class="why" style="font-size: 3rem;">Settings</h1>
+        <hr>
+        <div class="settingscontainer">
+            <button id="setting">Change Username</button>
+            <button id="setting2">Change Password</button>      
+        </div>
+        <hr>
+    </div>
+    <script src="js/settings.js"></script>
+    </body>
+</html>
